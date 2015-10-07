@@ -1,0 +1,27 @@
+{
+  "name": "practica1",
+  "version": "1.0.0",
+  "description": "Calculadora de temperaturas",
+  "main": "temperatura.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quinoescobar/sytw_prt_01.git"
+  },
+  "keywords": [
+    "temperatura",
+    "practica",
+    "1"
+  ],
+  "author": "José Joaquín Escobar Gómez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quinoescobar/sytw_prt_01/issues"
+  },
+  "homepage": "https://github.com/quinoescobar/sytw_prt_01#readme"
+}
