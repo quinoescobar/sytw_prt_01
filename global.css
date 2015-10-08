@@ -7,8 +7,9 @@ h1{
   text-align: center;
   font-family: Arial;
   font-size: 3em;
-  padding-top: 15%;
-  padding-bottom: 3%;
+  padding-top: 25%;
+  padding-bottom: 4%;
+  color: white;
 }
 
 input{
@@ -23,10 +24,12 @@ input{
 th{
   font-family: Arial;
   font-size: 1.2em;
+  color: white;
 }
 
 th, td{
   padding-bottom: 5%;
+  color: white;
 }
 
 table {
