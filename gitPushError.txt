@@ -1,0 +1,20 @@
+alu4635@alu4635:~/sytw/practicas/practica1$ git push origin master
+>ssh: Could not resolve hostname github.com: Name or service not known
+>fatal: Could not read from remote repository.
+>
+>Please make sure you have the correct access rights
+>and the repository exists.
+
+alu4635@alu4635:~/sytw/practicas/practica1$ eval $(ssh-agent -s)
+>Agent pid 999
+
+alu4635@alu4635:~/sytw/practicas/practica1$ ssh-add ~/.ssh/id_rsa
+>Identity added: /home/alu4635/.ssh/id_rsa (rsa w/o comment)
+
+alu4635@alu4635:~/sytw/practicas/practica1$ git push origin master
+>Counting objects: 9, done.
+>Compressing objects: 100% (9/9), done.
+>Writing objects: 100% (9/9), 1.61 KiB | 0 bytes/s, done.
+>Total 9 (delta 5), reused 0 (delta 0)
+>To git@github.com:quinoescobar/sytw_prt_01.git
+>   f02bced..f704eca  master -> master
