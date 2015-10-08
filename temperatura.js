@@ -1,4 +1,5 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
+//añade estructura de programacion, mas errores vamos!
 function calcular() {
   var result;
   var original = document.getElementById("original");
@@ -17,6 +18,13 @@ function calcular() {
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
+      //-------toFixed()------------
+      // Convert a number into a string, keeping only two decimals:
+      // var num = 5.56789;
+      // var n = num.toFixed(2);
+      //
+      // The result of n will be:
+      // 5.57
       result = result.toFixed(1)+" Farenheit";
     }
     else {
