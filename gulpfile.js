@@ -31,5 +31,5 @@ gulp.task('runtest', function(tests) {
 });
 
 gulp.task('guard', function() {
-    gulp.watch(['lib/**', 'tests/**'], ['mocha']);
+    gulp.watch(['tests/**'], ['mocha']);
 });
