@@ -3,7 +3,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1{
+h1,a{
   text-align: center;
   font-family: Arial;
   font-size: 3em;

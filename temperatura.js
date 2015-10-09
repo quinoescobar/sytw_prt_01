@@ -9,8 +9,9 @@ function calcular() {
   //Siguiente digito si o si
   //
   var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
+  var mejorRegex = /(^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)\s*([fFcC])/
 
-  var x = temp.match(regexp);
+  var x = temp.match(mejorRegex);
 
   if (x) {
     var num = x[1];
