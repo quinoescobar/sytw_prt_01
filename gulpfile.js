@@ -3,6 +3,7 @@ var gulp    = require('gulp'),
     uglify  = require('gulp-uglify'),
     concat  = require('gulp-concat');
 var del     = require('del');
+var mocha   = require('gulp-mocha');
 var minifyHTML = require('gulp-minify-html');
 var minifyCSS  = require('gulp-minify-css');
 
@@ -22,4 +23,13 @@ gulp.task('minify', function () {
 
 gulp.task('clean', function(cb) {
   del(['minified/*'], cb);
+});
+
+gulp.task('runtest', function(tests) {
+  return gulp.src('test.js')
+  .pipe(mocha());
+});
+
+gulp.task('guard', function() {
+    gulp.watch(['lib/**', 'tests/**'], ['mocha']);
 });
