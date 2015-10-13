@@ -3,6 +3,12 @@ var assert = chai.assert;
 suite('temperature', function()
 {
 
+    test('Calcular funciona', function()
+    {
+
+        assert.ok(calcular, "funciona");
+    });
+
     test('34J = error', function()
     {
         original.value = "34J";
@@ -37,4 +43,29 @@ suite('temperature', function()
         calcular();
         assert.deepEqual(converted.innerHTML, "-45.4 Farenheit");
     });
+
+    test('-43c != 1234 Farenheit', function()
+    {
+        original.value = "-43c";
+        calcular();
+        assert.notEqual(converted.innerHTML, "1234 Farenheit");
+    });
+
+    test('44C es menor que 120F', function()
+    {
+        original.value = "44C ";
+        calcular();
+        assert.isBelow(converted.innerHTML, "120F");
+    });
+
+
+    test('100C es mayor que 0F', function()
+    {
+        original.value = "100C";
+        calcular();
+        assert.isAbove(converted.innerHTML, "0F");
+    });
+
+
+
 });
